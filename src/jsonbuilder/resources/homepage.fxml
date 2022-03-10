@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jsonbuilder.Controller.HomePageController">
+   <children>
+      <Text layoutX="180.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mod Name:" />
+      <Text layoutX="180.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mod Path:" />
+      <Button fx:id="toBuild" layoutX="180.0" layoutY="258.0" mnemonicParsing="false" onAction="#toBuildPage" text="To Build Page" />
+      <TextField fx:id="modName" layoutX="180.0" layoutY="156.0" />
+      <TextField fx:id="modPath" layoutX="180.0" layoutY="211.0" />
+      <Label layoutX="18.0" layoutY="91.0" text="在进行Json文件写入之前必须先填写一次该页面的参数，后续如非更换mod，无需再次填写" textFill="RED" />
+      <Label fx:id="tip" layoutX="179.0" layoutY="312.0" />
+      <Button fx:id="check" layoutX="290.0" layoutY="258.0" mnemonicParsing="false" onAction="#onCheck" text="Check" />
+   </children>
+</Pane>
